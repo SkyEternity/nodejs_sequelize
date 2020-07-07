@@ -1,5 +1,4 @@
 var express = require('express');
-const { raw } = require('mysql');
 var router = express.Router();
 var User = require('../model').User
 

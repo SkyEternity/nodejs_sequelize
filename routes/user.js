@@ -72,7 +72,6 @@ var Updatauser = function(req, res) {
 			id: req.params.id
 		}
 	}).then((rej) => {
-		console.log(rej);
 		if(rej[0]) {
 			res.json({
 				code: 0,

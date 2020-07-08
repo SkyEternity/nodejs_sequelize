@@ -6,11 +6,18 @@ let Sequelize = require('sequelize'),
 			id: {
 				autoIncrement: true,	 // 自动递增
 				type: Sequelize.INTEGER,
-				primaryKey: true 		 // 声明主键
+				primaryKey: true, 		 // 声明主键
+				
 			},
 			uid: {
 				type: Sequelize.INTEGER,
 				unique: true,
+				allowNull: false,
+			},
+			userId: {
+				type: Sequelize.INTEGER,
+				unique: true,
+				allowNull: false,
 			},
 			phone: Sequelize.STRING
 		},
